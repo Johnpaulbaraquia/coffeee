@@ -1,0 +1,72 @@
+body{
+    background: url('../images/BG\ POGI.jpg') no-repeat center center/cover;
+    backdrop-filter: (1.5);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #e9d2d2; */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar .logo a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+/* Adjust Content Below Navbar */
+body {
+    padding-top: 60px; /* Prevent content from hiding behind navbar */
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .nav-links a {
+        display: block;
+    }
+}

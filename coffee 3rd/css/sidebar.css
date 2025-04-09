@@ -1,0 +1,61 @@
+/* Sidebar Styles */
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #575757;
+}
+
+/* Main Content */
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+/* Responsive Sidebar */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        text-align: center;
+        float: left;
+        width: 25%;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar a {
+        width: 100%;
+        float: none;
+    }
+}

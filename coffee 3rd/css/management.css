@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: url('../images/BG\ POGI.jpg') no-repeat center center/cover;
+
+}
+
+.admin-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #2f1313;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background:#6f4e37 ;
+    color: white;
+}
+
+select {
+    padding: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    background: #6f4e37;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: #563c28;
+}
+
+
+@media screen and (max-width: 768px) {
+    .admin-content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    select, button {
+        width: 100%;
+    }
+}
